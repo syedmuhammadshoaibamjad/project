@@ -21,13 +21,13 @@ public:
 
         for (int i = 0; i < x; i++)
         {
-//        	usleep(): Suspends the execution of the program for a specified number of microseconds using unistd.h headerfile.
-            usleep(10000);
+//        	int usleep(): Suspends the execution of the program for a specified number of microseconds using unistd.h headerfile.
+            int usleep(10000);
             cout << SB;
         }
         for (int i = 0; i < y; i++)
         {
-            usleep(10000);
+            int usleep(10000);
             cout << CH;
         }
     }
@@ -39,12 +39,12 @@ public:
 
         for (int i = 0; i < y; i++)
         {
-            usleep(10000);
+            int usleep(10000);
             cout << CH;
         }
         for (int i = 0; i < x; i++)
         {
-            usleep(10000);
+            int usleep(10000);
             cout << SB;
         }
     }
@@ -85,7 +85,7 @@ public:
              << "                  ";
         for (int i = 0; i <= 80; i++)
         {
-            usleep(150000);
+            int usleep(150000);
             cout << SB;
         }
         cout << endl
@@ -106,7 +106,7 @@ public:
         cout << "\n\n\n\n\n\n\n\n\n\n\n\n                                 System Starting Please Wait";
         for (int i = 0; i < 30; i++)
         {
-            usleep(150000);
+            int usleep(150000);
             cout << ".";
         }
         system("cls");
@@ -386,7 +386,7 @@ int main()
 
             if (evm.authenticateAdmin(adminName, adminPassword))
             {   obj.drawFooter(" login sucessful ");
-                sleep(1);
+                int usleep(1);
                 system("cls");
                 int adminChoice;
                 while (true)
